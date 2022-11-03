@@ -45,7 +45,13 @@
               <img src="images/telephone-symbol-button.png" alt=""> Call : 0315674123
             </a>
           </div>
-         
+          <div class="tel_container">
+            <a href="">
+               Open Hours 6 AM - 9 PM
+            </a>
+            
+          </div>
+
         </div>
       </div>
       <div class="container-fluid">
@@ -55,7 +61,7 @@
             <span>
               Putra Wahyu Farma
 
-              
+
             </span>
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -72,7 +78,7 @@
                 <li class="nav-item">
                   <a class="nav-link" href="about.html">About </a>
                 </li>
-              
+
                 <li class="nav-item">
                   <a class="nav-link" href="contact.html"> <strong> Contact us </strong></a>
                 </li>
@@ -81,7 +87,7 @@
                 <input type="search" placeholder="Search">
                 <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
               </form>
-              
+
             </div>
           </div>
 
@@ -94,12 +100,15 @@
 
 
   <!-- contact section -->
-  <section class="contact_section layout_padding">
+  <section class="contact_section mt-5">
     <div class="container">
       <div class="row">
         <div class="custom_heading-container ">
           <h2>
-            Request A call back
+            Ada pertanyaan? <br>
+            <span>
+              tanyakan dibawah
+            </span>
           </h2>
         </div>
       </div>
@@ -108,33 +117,43 @@
       <div class="row">
         <div class="col-md-5">
           <div class="form_contaier">
-            <form>
+            <form name="pwf-contact">
+              <div class="alert alert-warning alert-dismissible fade show d-none my-Alert" role="alert">
+                <strong>Terimakasih</strong> Pesan sudah diterima.
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
               <div class="form-group">
                 <label for="exampleInputName1">Name</label>
-                <input type="text" class="form-control" id="exampleInputName1">
+                <input type="text" class="form-control" id="exampleInputName1" name="nama">
               </div>
               <div class="form-group">
                 <label for="exampleInputNumber1">Phone Number</label>
-                <input type="text" class="form-control" id="exampleInputNumber1">
+                <input type="text" class="form-control" id="exampleInputNumber1" name="no hp">
               </div>
 
               <div class="form-group">
                 <label for="exampleInputEmail1">Email </label>
-                <input type="email" class="form-control" id="exampleInputEmail1">
+                <input type="email" class="form-control" id="exampleInputEmail1" name="email">
               </div>
-              <div class="form-group ">
+              <!-- <div class="form-group ">
                 <label for="inputState">Select medicine</label>
                 <select id="inputState" class="form-control">
                   <option selected>Medicine 1</option>
                   <option selected>Medicine 2</option>
                   <option selected>Medicine 3</option>
                 </select>
-              </div>
+              </div> -->
               <div class="form-group">
                 <label for="exampleInputMessage">Message</label>
-                <input type="text" class="form-control" id="exampleInputMessage">
+                <input type="text" class="form-control" id="exampleInputMessage" name="pesan">
               </div>
-              <button type="submit" class="">Send</button>
+              <button type="submit" class="btn btn-primary btn-submit">Send</button>
+              <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                Loading...
+              </button>
             </form>
           </div>
         </div>
@@ -149,22 +168,31 @@
             </p>
           </div>
         </div>
-        <div class="col-12">
-          <h4 class="mt-5 mb-4">Jl. Dukuh Kupang Xxix No.27, Dukuh Kupang, Kec. Dukuhpakis, Kota SBY, Jawa Timur 60225</h4>
-
-        <div class="google-map pt-3">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.6153546228934!2d112.7117302146919!3d-7.284530194742212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fc0a2faeac85%3A0x4c8b03277f21ef3f!2sdr.%20Wahyu%20Sulistyaningsih!5e0!3m2!1sen!2sid!4v1666795069626!5m2!1sen!2sid" width="1200" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-       
-         </div>
       </div>
+      <div class="custom_heading-container  mt-5">
+        <h2>
+          Alamat 
+        </h2>
+      </div>
+      <div class="row mt-2">
+        
+        
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.6152080521338!2d112.71183001469188!3d-7.284546794742207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fc0a2faeac85%3A0x4c8b03277f21ef3f!2sdr.%20Wahyu%20Sulistyaningsih!5e0!3m2!1sen!2sid!4v1667446329050!5m2!1sen!2sid"
+          width="1170" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        
       </div>
     </div>
+
   </section>
+
 
   <!-- end contact section -->
 
   <!-- info section -->
-  
+
 
 
   <!-- end info section -->
@@ -244,6 +272,8 @@
   </section>
 
 
+
+
   <!-- end info section -->
 
   <!-- footer section -->
@@ -300,6 +330,38 @@
         }
       }
     });
+  </script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxSRBocMuYTor_TxDpd2NlNtTAKaSqi4rT2qZyby11XLpzbpJ1c2Cwb3cgwOUmjLZk_og/exec'
+    const form = document.forms['pwf-contact'];
+    const btnSubmit = document.querySelector('.btn-submit');
+    const btnLoading = document.querySelector('.btn-loading');
+    const myAlert = document.querySelector('.my-Alert');
+
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      // ketika tombol submit di klik
+      // tampilkan tombol loading,hilangkan tombol dikirim
+
+      btnLoading.classList.toggle('d-none');
+      btnSubmit.classList.toggle('d-none');
+
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+          // tampilkan tombol kirim
+          btnLoading.classList.toggle('d-none');
+          btnSubmit.classList.toggle('d-none');
+
+          // tampilkan alert
+          myAlert.classList.toggle('d-none');
+
+          // reset form
+          form.reset();
+          console.log('Success!', response)
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
   </script>
 
 
